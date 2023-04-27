@@ -196,10 +196,9 @@
           <p style="color:grey">To keep the program clean, therefore, tests like this should be buried in methods. In a 
             chess game, for example, you could test whether a node is a leaf by writing a <b style="color:black"> gameOver method</b>
              (or you could even call it <b style="color:black">isLeaf</b>). This method
-             would encapsulate all
-             the ugly details of figuring out whether any possible moves remain. </p>
-             <p style="color:grey">Notice that the backtracking altorithms require us to keep track, for each node on the 
-                [12:20 PM, 2/26/2023] +91 74659 89319: current path, which of its children have been tried already (so we don't have to try them again). 
+             would encapsulate all the ugly details of figuring out whether any possible moves remain.</p>
+             <p style="Notice that the backtracking altorithms require us to keep track, for each node on the 
+               current path, which of its children have been tried already (so we don't have to try them again). 
               In the above code we made this look simple, by just saying <b style="color:black">for each child c of n.</b>In reality, it may be 
               difficult to figure out what the possible children are, and there may be no obvious way to step through 
               them. In chess, for example, a node can represent one arrangement of pieces on a chessboard, and each child 
